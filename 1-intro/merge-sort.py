@@ -4,7 +4,7 @@ def merge_sort(list_to_order):
     if l <= 1:
         return list_to_order
 
-    middle = l / 2
+    middle = l // 2
     ll = merge_sort(list_to_order[middle:])
     rl = merge_sort(list_to_order[:middle])
 
@@ -27,4 +27,4 @@ def merge_sort(list_to_order):
 
     return l3
 
-print merge_sort([5, 4, 1, 8, 7, 2, 6])
+print(merge_sort([5, 4, 1, 8, 7, 2, 6]))
