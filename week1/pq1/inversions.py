@@ -25,10 +25,10 @@ def sort_and_count_inversions(entry, count=0):
     right, count_right = sort_and_count_inversions(entry[middle:], count)
     return merge_and_count_split(left, right, count_left + count_right)
 
-t1 = [int(line.rstrip('\n')) for line in open('t1.txt')]
-t2 = [int(line.rstrip('\n')) for line in open('t2.txt')]
-t3 = [int(line.rstrip('\n')) for line in open('t3.txt')]
-t4 = [int(line.rstrip('\n')) for line in open('t4.txt')]
+t1 = [int(line.rstrip('\n')) for line in open('./t1.txt')]
+t2 = [int(line.rstrip('\n')) for line in open('./t2.txt')]
+t3 = [int(line.rstrip('\n')) for line in open('./t3.txt')]
+t4 = [int(line.rstrip('\n')) for line in open('./t4.txt')]
 
 print(sort_and_count_inversions(t1)[1])
 print(sort_and_count_inversions(t2)[1])
