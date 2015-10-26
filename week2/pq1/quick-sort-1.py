@@ -1,4 +1,3 @@
-comparisons = 0
 def quick_sort(entry, first, last):
     if first < last:
         pivot = partition(entry, first, last)
